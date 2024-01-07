@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "zote"
+
+line = ARGV[0].to_i
+if line > 57 || line < 1
+  line = nil
+end
+
+puts Zote.get(line)
